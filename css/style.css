@@ -1,0 +1,313 @@
+body {
+  background-image: url(../img/Background.png);
+}
+
+h1 {
+  color: black;
+  font-size: 54px;
+  font-family: 'Dorsa', sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 24px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper header {
+  width: 960px;
+  margin-left: 20px;
+  margin-bottom: 80px;
+}
+
+.wrapper header ul li {
+  width: 130px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  color: snow;
+}
+
+.wrapper header ul li:hover {
+  color: black;
+}
+
+.wrapper header ul li .logo :hover {
+  background-color: #38afe5;
+  color: snow;
+  border-radius: 50%;
+  height: 82px;
+  width: auto;
+}
+
+.wrapper header ul li .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.wrapper header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    margin-left: -8px;
+    margin-top: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.wrapper header .dropdown-content ul::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 3px 8px 3px;
+    border-color: transparent transparent snow transparent;
+    margin-top: -8px;
+    margin-left: -4px;
+}
+
+.wrapper header .dropdown-content li {
+    color: black;
+    text-decoration: none;
+    width: auto;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+  }
+
+.wrapper header .dropdown-content li:hover {
+  background-color: #38afe5;
+  color: snow;
+}
+
+header ul li .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: snow;
+}
+
+.dropdown ul li p {
+  font-size: 18px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+}
+
+.logo {
+  background-color: snow;
+  width: 100px !important;
+  position: relative;
+  height: 100px !important;
+  top: -8px;
+  left: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.logo h1 {
+  margin-top: 20px;
+  padding-top: 18px;
+}
+.wrapper .slider {
+  background-color: snow;
+  height: 570px;
+  padding: 60px;
+}
+
+.wrapper .slider h2, .wrapper .slider h3 {
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: fit-content;
+  margin-top: 300px;
+  z-index: 1000;
+}
+
+.wrapper .slider h3 {
+  background-color: white;
+  margin-top: 264px;
+}
+
+.wrapper .slider h2 {
+  padding-right: 20px;
+  background-color: #38afe5;
+  color: snow;
+}
+
+.wrapper .slider img {
+  position: relative;
+  width: 880px;
+  height: auto;
+}
+
+.switch-img{
+  height: 0;
+  width: 0;
+}
+
+.switch-left {
+  position: relative;
+  left: 40px;
+  bottom: 120px;
+  height: 80px;
+  width: 40px;
+  color: snow;
+  text-align: center;
+  border-bottom-left-radius: 80px;
+  border-top-left-radius: 80px;
+  background-color: #38afe5;
+}
+
+.switch-left:hover{
+  background-color: #3ac2ff;
+  color: black;
+}
+
+.switch-right {
+  position: relative;
+  left: 80px;
+  bottom: 200px;
+  height: 80px;
+  width: 40px;
+  color: snow;
+  vertical-align: middle;
+  border-bottom-right-radius: 80px;
+  border-top-right-radius: 80px;
+  background-color: #38afe5;
+}
+
+.switch-right a, .switch-left a {
+  text-decoration: none;
+  height: 80px;
+  width: auto;
+  padding-left: 8px;
+  margin-top: 30px;
+  position: relative;
+  top: 30px;
+}
+
+a:link {
+    color: snow;
+}
+
+a:visited {
+  color: snow;
+}
+
+.switch-right:hover {
+  background-color: #3ac2ff;
+  color: black;
+}
+
+.wrapper .destinations {
+  width: 880px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: snow;
+}
+
+.wrapper .destinations div {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.wrapper .destinations h2 {
+  margin-bottom: 40px;
+}
+
+.wrapper .destinations img {
+  width: 276px;
+  height: 276px;
+}
+
+.wrapper .destinations div:last-child {
+  margin-right: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #193149;
+  overflow: hidden;
+  width: 0;
+  height: 276px;
+  margin-bottom: 3px;
+  /*transition: .9s ease;*/
+}
+
+.container:hover .overlay {
+  width: 50%;
+}
+
+.destinations .container .text h2 {
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: white;
+  font-size: 28px;
+  position: relative;
+  overflow: hidden;
+  top: 30px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.destinations .container .text p {
+  color: white;
+  overflow: hidden;
+  top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*transform: translate(-50%, -50%);*/
+  /*-ms-transform: translate(-50%, -50%);*/
+}
+
+button{
+  margin-left: 70px;
+}
+
+.wrapper footer {
+  width: auto;
+  padding-top: 100px;
+  heignt: 100px;
+  background-color: snow;
+}
+
+.wrapper footer .up-page {
+  position: fixed;
+  bottom: 20px;
+  width: 40px;
+  margin-left: 950px;
+  height: 40px;
+  border-radius: 50%;
+  background: #38afe5;
+}
+.wrapper footer .up-page p {
+  text-align: center;
+  font-stretch: 10px;
+  color: snow;
+  padding-top: 10px;
+}
