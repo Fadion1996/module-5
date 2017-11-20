@@ -107,11 +107,11 @@ header ul li .dropdown:hover .dropdown-content {
   text-transform: uppercase;
 }
 
-.logo {
+header ul li .logo {
   background-color: snow;
-  width: 100px !important;
+  width: 100px;
   position: relative;
-  height: 100px !important;
+  height: 100px;
   top: -8px;
   left: 10px;
   border-radius: 50%;
@@ -281,8 +281,6 @@ a:visited {
   top: 80px;
   padding-left: 10px;
   padding-right: 10px;
-  /*transform: translate(-50%, -50%);*/
-  /*-ms-transform: translate(-50%, -50%);*/
 }
 
 button{
@@ -303,11 +301,12 @@ button{
   margin-left: 950px;
   height: 40px;
   border-radius: 50%;
-  background: #38afe5;
+  background-color: #38afe5;
 }
-.wrapper footer .up-page p {
+.wrapper footer .up-page img {
+  margin-top: 6px;
+  margin-left: 8px;
   text-align: center;
-  font-stretch: 10px;
+  vertical-align: middle;
   color: snow;
-  padding-top: 10px;
 }
