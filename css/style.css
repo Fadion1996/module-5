@@ -216,9 +216,8 @@ a:visited {
 }
 
 .switch-right img , .switch-left img {
-  width: 24px;
-  height: 24px;
-  margin-top: -2px;
+  width: 18px;
+  height: 18px;
 }
 
 .switch-right:hover {
