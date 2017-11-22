@@ -151,13 +151,13 @@ header ul li .logo {
   color: #ffffff;
 }
 
-.wrapper .slider img {
+.slider img {
   position: relative;
   width: 880px;
   height: auto;
 }
 
-.switch-img{
+.switch-img {
   height: 0;
   width: 0;
 }
@@ -203,12 +203,22 @@ header ul li .logo {
   top: 30px;
 }
 
-a:link {
+a:link, a:visited {
     color: #ffffff;
+}
+
+.switch-right a{
+  margin-left: -2px;
 }
 
 a:visited {
   color: #ffffff;
+}
+
+.switch-right img , .switch-left img {
+  width: 24px;
+  height: 24px;
+  margin-top: -2px;
 }
 
 .switch-right:hover {
